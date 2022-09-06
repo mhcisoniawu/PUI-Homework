@@ -1,0 +1,22 @@
+#myProducts {
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+#myCart {
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: 24px;
+  background-color: yellow;
+}
+
+#myShopping {
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
