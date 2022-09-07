@@ -1,16 +1,16 @@
-#myProducts {
+.heading {
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
   font-family: sans-serif;
   font-weight: 100;
 }
 
-#myCart {
-  text-align: center;
-  font-size: 24px;
-  font-family: sans-serif;
+hr {
+  border: solid 2px;
+}
+
+#myProducts {
   font-weight: bold;
-  border: 24px;
   background-color: yellow;
 }
 
@@ -21,12 +21,35 @@
   font-weight: 100;
 }
 
-.myRemove {
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+}
+
+.itemInfo {
   text-align: center;
-  font-size: 10px;
   font-family: sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.itemDes {
+  display: inline-block;
+  text-align: left;
+  color: black;
+}
+
+.itemInfo:hover {
+  background-color: yellow;
+}
+
+.itemInfo:visited {
   font-weight: bold;
-  text-decoration: underline;
+  color: black;
 }
 
 .myImage {
@@ -48,4 +71,27 @@
   font-size: 30px;
   font-family: sans-serif;
   font-weight: lighter;
+}
+
+.item:hover {
+  background-color: yellow;
+}
+
+.add2cart:hover {
+  background-color: yellow;
+  font-size: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10px;
+  color: black;
+}
+
+.myRemove {
+  text-align: center;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
 }
