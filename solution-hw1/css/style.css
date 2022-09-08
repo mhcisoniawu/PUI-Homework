@@ -154,7 +154,7 @@ select {
 }
 
 .cartInfo {
-  font-size: 18px;
+  font-size: px;
   text-align: center;
   font-family: sans-serif;
   font-weight: lighter;
@@ -165,4 +165,17 @@ select {
   text-align: center;
   font-family: sans-serif;
   font-weight: lighter;
+}
+
+.checkout {
+  text-align: center;
+  font-size: 15px;
+  background-color: yellow;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 100px;
+  padding: 5px;
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
 }
