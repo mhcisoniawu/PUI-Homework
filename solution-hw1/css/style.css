@@ -1,50 +1,69 @@
-.heading {
-  text-align: center;
-  font-size: 16px;
+.pageBody {
+  align-self: left;
+  justify-content: center;
+  align-items: center;
   font-family: sans-serif;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 hr {
   border: solid 2px;
 }
 
-#myProducts {
-  font-weight: bold;
+h1 {
   background-color: yellow;
-}
-
-#myShopping {
+  width: 100px;
+  margin: auto;
   text-align: center;
-  font-size: 30px;
-  font-family: sans-serif;
-  font-weight: 100;
+  font-size: 16px;
 }
 
-.images {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 120px;
-  height: 120px;
-  border: 2px solid black;
-}
-
-.itemInfo {
+h2,
+h3 {
+  margin: auto;
   text-align: center;
-  font-family: sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: lighter;
 }
 
-.itemDes {
+#logo {
+  width: 200px;
+  height: 150px;
+  border: 0cm;
+  margin-left: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 170px;
+  border: 2px solid black;
+}
+
+p {
+  font-size: 12px;
   display: inline-block;
+  /* up*/
   text-align: left;
   color: black;
 }
 
+.itemInfo {
+  width: 175px;
+  margin: auto;
+}
+
+/* .itemDes {
+  display: inline-block;
+  text-align: left;
+  color: black;
+} */
+
 .itemInfo:hover {
   background-color: yellow;
+  font-weight: bold;
+  border: 100px;
 }
 
 .itemInfo:visited {
