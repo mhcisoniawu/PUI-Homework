@@ -18,12 +18,40 @@ h1 {
   font-size: 16px;
 }
 
-h2,
-h3 {
+h2 {
   margin: auto;
   text-align: center;
   font-size: 16px;
   font-weight: lighter;
+}
+
+h3 {
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+h4 {
+  text-align: left;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+h5 {
+  text-align: left;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+h6 {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 10px;
+  text-decoration: underline;
+  margin-top: 3px;
 }
 
 #logo {
@@ -42,23 +70,16 @@ img {
 }
 
 p {
-  font-size: 12px;
-  display: inline-block;
-  /* up*/
+  font-size: 14px;
   text-align: left;
   color: black;
 }
 
-.itemInfo {
+.itemInfo,
+.mySelection {
   width: 175px;
   margin: auto;
 }
-
-/* .itemDes {
-  display: inline-block;
-  text-align: left;
-  color: black;
-} */
 
 .itemInfo:hover {
   background-color: yellow;
@@ -71,11 +92,17 @@ p {
   color: black;
 }
 
-.myImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid black;
+.container {
+  display: flex;
+  align-content: space-around;
+}
+
+select {
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 10px;
+  border: 3px solid;
+  width: 180px;
 }
 
 .item {
@@ -85,18 +112,15 @@ p {
   font-weight: lighter;
 }
 
-.itemPrice {
-  text-align: center;
-  font-size: 30px;
-  font-family: sans-serif;
-  font-weight: lighter;
-}
+/* .price {
+  text-decoration: none;
+} */
 
 .item:hover {
   background-color: yellow;
 }
 
-.add2cart:hover {
+/* .add2cart:hover {
   background-color: yellow;
   font-size: 5px;
   font-family: sans-serif;
@@ -105,12 +129,40 @@ p {
   margin-right: auto;
   margin: 10px;
   color: black;
-}
+} */
 
-.myRemove {
+/* .myRemove {
   text-align: center;
   font-size: 10px;
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: underline;
+} */
+
+#productDetailPic {
+  height: 400px;
+  border: 2px solid black;
+}
+
+.cartImage {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+}
+
+.cartInfo {
+  font-size: 18px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.cartInfoPrice {
+  font-size: 22px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
