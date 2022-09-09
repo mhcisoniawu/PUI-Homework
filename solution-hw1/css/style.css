@@ -1,11 +1,3 @@
-.pageBody {
-  align-self: left;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-weight: lighter;
-}
-
 hr {
   border: solid 2px;
 }
@@ -33,15 +25,12 @@ h3 {
 }
 
 h4 {
-  text-align: left;
   font-size: 15px;
   font-weight: lighter;
 }
 
 h5 {
-  text-align: left;
   font-weight: lighter;
-  font-family: sans-serif;
   font-size: 15px;
 }
 
@@ -51,13 +40,6 @@ h6 {
   font-size: 10px;
   text-decoration: underline;
   margin-top: 3px;
-}
-
-#logo {
-  width: 200px;
-  height: 150px;
-  border: 0cm;
-  margin-left: 10px;
 }
 
 img {
@@ -70,10 +52,24 @@ img {
 
 p {
   font-size: 14px;
-  text-align: left;
+  /* text-align: left; */
   color: black;
 }
 
+/* Common features through the 3 pages */
+.logo {
+  width: 200px;
+  height: 150px;
+  border: 0cm;
+  margin-left: 10px;
+}
+
+.pageBody {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+/* Features on Gallery page + Common features on Gallery/Product Detail page */
 .itemInfo,
 .mySelection {
   width: 175px;
@@ -91,12 +87,17 @@ p {
   color: black;
 }
 
-/* .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
+.link2Cart,
+.link2Gallery:link {
+  text-decoration: none;
+}
 
+.link2Cart,
+.link2Gallery:visited {
+  color: black;
+}
+
+/* Feautres on Product Detail page*/
 select {
   font-weight: lighter;
   font-size: 15px;
@@ -108,7 +109,7 @@ select {
 
 span {
   background-color: yellow;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: bold;
   padding: 10px;
   border: 2px solid;
@@ -116,19 +117,9 @@ span {
   padding-left: 20px;
 }
 
-.item {
-  text-align: center;
-  font-size: 25px;
-  font-family: sans-serif;
-  font-weight: lighter;
-}
-
-/* .price {
-  text-decoration: none;
-} */
-
-.item:hover {
-  background-color: yellow;
+.add2Cart {
+  width: 200px;
+  font-weight: bold;
 }
 
 #productDetailPic {
@@ -136,6 +127,7 @@ span {
   border: 2px solid black;
 }
 
+/* Features on Shopping Cart page*/
 .cartImage {
   width: 80px;
   height: 80px;
@@ -161,9 +153,4 @@ span {
   border: 2px solid;
   margin-left: auto;
   margin-right: auto;
-}
-
-.add2Cart {
-  width: 200px;
-  font-weight: bold;
 }
