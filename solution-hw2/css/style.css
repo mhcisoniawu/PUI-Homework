@@ -1,0 +1,176 @@
+hr {
+  border: solid 2px;
+}
+
+h1 {
+  background-color: yellow;
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  width: 100px;
+}
+
+h2,
+h3 {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: auto;
+  text-align: center;
+}
+
+h4,
+h5 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+h6 {
+  font-family: sans-serif;
+  font-size: 10px;
+  margin-top: 3px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+img {
+  border: 2px solid black;
+  display: block;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+}
+
+/* Common features through the 3 pages */
+.logo {
+  border-style: none;
+  height: 300px;
+  margin-left: 10px;
+  width: 400px;
+}
+
+.pageBody {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+/* Features on Gallery page + Common features on Gallery/Product Detail page */
+.itemInfo,
+.mySelection {
+  margin: auto;
+  width: 175px;
+}
+
+.itemInfo:hover {
+  background-color: yellow;
+  border: 100px;
+  font-weight: bold;
+}
+
+.itemInfo:visited {
+  color: black;
+  font-weight: bold;
+}
+
+.link2Cart,
+.link2Gallery:link {
+  text-decoration: none;
+}
+
+.link2Cart,
+.link2Gallery:visited {
+  color: black;
+}
+
+/* Feautres on Product Detail page*/
+select {
+  border: 3px solid;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 10px;
+  width: 180px;
+}
+
+span {
+  background-color: yellow;
+  border: 2px solid;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.add2Cart {
+  font-weight: bold;
+  width: 200px;
+}
+
+.productDetailPic {
+  border: 2px solid black;
+  height: 400px;
+}
+
+/* Features on Shopping Cart page*/
+.cartImage {
+  border: 2px solid black;
+  height: 80px;
+  width: 80px;
+}
+
+.cartInfo {
+  text-align: center;
+}
+
+.cartInfoPrice {
+  font-size: 20px;
+  text-align: center;
+}
+
+.checkout {
+  background-color: yellow;
+  border: 2px solid;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+}
+
+.checkoutLine {
+  width: 500px;
+}
+
+.navBar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: flex-end;
+  width: 1200px;
+}
+
+.navBarLogo {
+  flex: 1.2;
+}
+
+.navBarMenu {
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.galleryView {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
