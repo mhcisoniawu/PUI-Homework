@@ -7,7 +7,7 @@ h1 {
   font-size: 16px;
   margin: auto;
   text-align: center;
-  width: 100px;
+  width: wrap;
 }
 
 h2,
@@ -161,11 +161,6 @@ span {
   flex: 1.2;
 }
 
-.navBarMenu {
-  justify-content: flex-end;
-  align-items: stretch;
-}
-
 .galleryView {
   display: flex;
   width: 600px;
@@ -173,4 +168,10 @@ span {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+}
+
+.navBarProduct {
+  display: flex;
+  align-content: flex-end;
+  margin-right: 0;
 }
