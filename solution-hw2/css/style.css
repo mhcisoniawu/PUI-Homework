@@ -118,19 +118,20 @@ span {
 
 .productDetailPic {
   border: 2px solid black;
-  height: 700px;
-  width: 700px;
+  height: 550px;
+  width: 550px;
 }
 
 /* Features on Shopping Cart page*/
 .cartImage {
   border: 2px solid black;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 
 .cartInfo {
-  text-align: center;
+  text-align: left;
+  width: 150px;
 }
 
 .cartInfoPrice {
@@ -143,15 +144,16 @@ span {
   border: 2px solid;
   font-size: 15px;
   font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-right: auto; */
+  margin-left: 1000px;
   padding: 5px;
   text-align: center;
   width: 100px;
 }
 
 .checkoutLine {
-  width: 500px;
+  /* width: 500px; */
+  margin-left: 450px;
 }
 
 .navBar {
@@ -190,10 +192,13 @@ span {
 .shoppingBox {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .shoppingBox1,
-.shoppingBox2 {
+.shoppingBox2,
+.shoppingBox3,
+.shoppingBox4 {
   display: flex;
   justify-content: space-evenly;
   margin-left: 300px;
