@@ -31,7 +31,7 @@ h6 {
   font-family: sans-serif;
   font-size: 10px;
   margin-top: 3px;
-  text-align: center;
+  text-align: left;
   text-decoration: underline;
 }
 
@@ -72,15 +72,18 @@ p {
 
 .itemInfo:hover {
   background-color: yellow;
-  border: 100px;
+  /* border: 300px; */
   font-weight: bold;
 }
 
 .itemInfo:visited {
-  color: black;
-  font-weight: bold;
+  /* color: black; */
+  /* font-weight: bold; */
 }
 
+.galleryPrice {
+  margin-top: 0px;
+}
 .link2Cart,
 .link2Gallery:link {
   text-decoration: none;
@@ -125,18 +128,22 @@ span {
 /* Features on Shopping Cart page*/
 .cartImage {
   border: 2px solid black;
-  height: 100px;
   width: 100px;
 }
 
 .cartInfo {
   text-align: left;
-  width: 150px;
+  width: 350px;
 }
 
 .cartInfoPrice {
   font-size: 20px;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.totalPrice {
+  text-align: right;
+  margin-right: 100px;
 }
 
 .checkout {
@@ -145,7 +152,7 @@ span {
   font-size: 15px;
   font-weight: bold;
   /* margin-right: auto; */
-  margin-left: 1000px;
+  /* margin-left: 1000px; */
   padding: 5px;
   text-align: center;
   width: 100px;
@@ -153,7 +160,7 @@ span {
 
 .checkoutLine {
   /* width: 500px; */
-  margin-left: 450px;
+  margin-left: 440px;
 }
 
 .navBar {
@@ -192,14 +199,28 @@ span {
 .shoppingBox {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .shoppingBox1,
-.shoppingBox2,
-.shoppingBox3,
-.shoppingBox4 {
+.shoppingBox2 {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 300px;
+  margin-left: 360px;
+}
+
+.shoppingBox4 {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+  margin-left: 550px;
+  gap: 240px;
+}
+
+.shoppingBox5 {
+  margin-left: auto;
+  padding-right: 70px;
+}
+
+.testing {
+  text-decoration: none;
 }
