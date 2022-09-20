@@ -1,0 +1,208 @@
+/* Divider */
+hr {
+  border: solid 2px;
+}
+
+/* Highlighted item on navigation bar  */
+h1 {
+  background: yellow;
+  font-size: 20px;
+  margin: 30px;
+}
+
+/* Non-highlighted item on navigation bar */
+h2 {
+  font-size: 20px;
+  margin: 30px;
+  font-weight: lighter;
+}
+
+/* Our hand-made cinnamon rolls */
+h3 {
+  font-weight: lighter;
+  margin: auto;
+}
+
+/* H4 is detail description; H5 is selection title */
+h4,
+h5 {
+  font-weight: lighter;
+}
+
+/* Remove texts */
+h6 {
+  font-family: sans-serif;
+  font-size: 10px;
+  margin-top: 3px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+img {
+  border: 2px solid black;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+}
+
+/* Common features (logo, entire page, navigation) appeared in all 3 pages */
+.logo {
+  border-style: none;
+  height: 300px;
+  width: 400px;
+}
+
+.pageBody {
+  font-family: sans-serif;
+  font-weight: lighter;
+  width: 1200px;
+}
+.navBar {
+  align-items: center;
+  display: flex;
+}
+
+.navBarLogo {
+  flex: 1.2;
+}
+
+.navBarLine {
+  width: 750px;
+}
+
+.navBarProduct {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.link2Cart,
+.link2Gallery:link {
+  text-decoration: none;
+}
+
+.link2Cart,
+.link2Gallery:visited {
+  color: black;
+}
+
+/* Features in Gallery page + Common features in Gallery/Product Detail page */
+.itemInfo,
+.mySelection {
+  margin: auto;
+  width: 300px;
+}
+
+.itemInfo:hover {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.galleryView {
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feautres on Product Detail page*/
+
+/* Dropdown selections */
+select {
+  border: 3px solid;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 10px;
+  width: 180px;
+}
+
+/* Add to cart box */
+span {
+  background-color: yellow;
+  border: 2px solid;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.detailBox {
+  display: flex;
+}
+
+.add2Cart {
+  font-weight: bold;
+}
+
+.productDetailPic {
+  border: 2px solid black;
+  width: 550px;
+}
+
+/* Features on Shopping Cart page*/
+.cartImage {
+  border: 2px solid black;
+  width: 100px;
+}
+
+.cartInfo {
+  text-align: left;
+  width: 350px;
+}
+
+.cartInfoPrice {
+  font-size: 20px;
+}
+
+.totalPrice {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.checkout {
+  background-color: yellow;
+  border: 2px solid;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+}
+
+.checkoutLine {
+  margin-left: 440px;
+}
+
+.shoppingBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoppingBox1,
+.shoppingBox2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 360px;
+}
+
+.shoppingBox4 {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+  margin-left: 550px;
+  gap: 240px;
+}
+
+.shoppingBox5 {
+  margin-left: auto;
+  padding-right: 70px;
+}
