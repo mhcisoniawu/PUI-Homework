@@ -8,16 +8,17 @@
 // selecting the total price for the current cinnamon roll customization //
 let glazingPrice;
 let packPrice;
-let selectedPrice = document.querySelector("selectedPrice");
+let cusPrice = document.querySelector("cusPrice");
 
-function selectGlazing() {
+function selectGlazing(index) {
   let selectedGlazing = document.getElementById("glazingOptions").value;
-  glazingPrice = selectedGlazing;
+  // glazingPrice = selectedGlazing;
 }
+console.log(selectGlazing(3));
 
 function selectPack() {
   let selectedPack = document.getElementById("packOptions").value;
-  packPrice = selectedPack;
+  // packPrice = selectedPack;
 }
 
 selectedPrice = (2.49 + glazingPrice) * packPrice;
