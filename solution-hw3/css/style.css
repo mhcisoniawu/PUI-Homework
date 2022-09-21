@@ -124,8 +124,8 @@ select {
   width: 180px;
 }
 
-/* Add to cart box */
-span {
+/* Add to cart button */
+#addToCart {
   background-color: yellow;
   border: 2px solid;
   font-size: 11px;
@@ -139,7 +139,10 @@ span {
   display: flex;
 }
 
-.add2Cart {
+.addCustomize {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 120px;
   font-weight: bold;
 }
 
