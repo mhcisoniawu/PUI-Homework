@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8" />
-  <title>Prouduct Gallery</title>
+  <script
+  src = "../javascript/price.js" defer> </script>
+  </script>
+  <title>Prouduct Detail</title>
   <link rel="stylesheet" href="../css/style.css" />
 
   <body>
@@ -49,24 +52,24 @@
           </h4>
           <!--Options for glazing-->
           <h5>Glazing:</h5>
-          <select>
-            <option value="keepOriginal">Keep original</option>
-            <option value="sugarMilk">Sugar milk</option>
-            <option value="vanillaMilk">Vanilla milk</option>
-            <option value="doubleChocolate">Double chocolate</option>
+          <select id="glazingOptions">
+            <option value="0.00">Keep original</option>
+            <option value="0.00">Sugar milk</option>
+            <option value="0.50">Vanilla milk</option>
+            <option value="1.50">Double chocolate</option>
           </select>
           <!--Options for pack size-->
           <h5>Pack size:</h5>
-          <select>
-            <option value="one">1</option>
-            <option value="three">3</option>
-            <option value="six">6</option>
-            <option value="twelve">12</option></select
+          <select id="packOptions">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5">6</option>
+            <option value="10">12</option></select
           ><br />
           <br />
           <!--Price and add to cart action-->
           <div class="add2Cart">
-            <p>
+            <p class="selectedPrice">
               $2.49 &nbsp; &nbsp; &nbsp;
               <span> Add to Cart </span>
             </p>
