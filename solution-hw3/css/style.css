@@ -13,8 +13,8 @@ h1 {
 /* Non-highlighted item on navigation bar */
 h2 {
   font-size: 20px;
-  margin: 30px;
   font-weight: lighter;
+  margin: 30px;
 }
 
 /* Our hand-made cinnamon rolls */
@@ -41,9 +41,9 @@ h6 {
 img {
   border: 2px solid black;
   display: block;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 p {
@@ -106,10 +106,10 @@ p {
 
 .galleryView {
   display: flex;
-  width: 1000px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+  width: 1000px;
 }
 
 /* Feautres on Product Detail page*/
@@ -125,7 +125,7 @@ select {
 }
 
 /* Add to cart button */
-#addToCart {
+.addToCart {
   background-color: yellow;
   border: 2px solid;
   font-size: 11px;
@@ -141,9 +141,9 @@ select {
 
 .addCustomize {
   display: flex;
+  font-weight: bold;
   justify-content: space-between;
   margin-right: 120px;
-  font-weight: bold;
 }
 
 .productDetailPic {
@@ -167,8 +167,8 @@ select {
 }
 
 .totalPrice {
-  text-align: right;
   margin-right: 100px;
+  text-align: right;
 }
 
 .checkout {
@@ -199,10 +199,10 @@ select {
 
 .shoppingBox4 {
   display: flex;
+  gap: 240px;
   justify-content: flex-end;
   justify-content: space-around;
   margin-left: 550px;
-  gap: 240px;
 }
 
 .shoppingBox5 {
