@@ -75,3 +75,48 @@ selectPack.addEventListener("change", onSelectValueChangePack);
 
 // Call the function to get the total price
 calculateTotal(glazingIndex, packIndex);
+
+// Roll database provided in Github
+const rolls = {
+  Original: {
+    basePrice: 2.49,
+    imageFile: "original-cinnamon-roll.jpg",
+  },
+  Apple: {
+    basePrice: 3.49,
+    imageFile: "apple-cinnamon-roll.jpg",
+  },
+  Raisin: {
+    basePrice: 2.99,
+    imageFile: "raisin-cinnamon-roll.jpg",
+  },
+  Walnut: {
+    basePrice: 3.49,
+    imageFile: "walnut-cinnamon-roll.jpg",
+  },
+  "Double-Chocolate": {
+    basePrice: 3.99,
+    imageFile: "double-chocolate-cinnamon-roll.jpg",
+  },
+  Strawberry: {
+    basePrice: 3.99,
+    imageFile: "strawberry-cinnamon-roll.jpg",
+  },
+};
+
+/* --------------------- Below is URL parameters for HW4 ------------------------------- */
+
+// Search parameters that get the list of string from the URL.
+const queryString = window.location.search;
+console.log(queryString);
+// Then, we use the query string to create a URLSearchParams object:
+const params = new URLSearchParams(queryString);
+console.log(params);
+// Finally, we can access the parameter we want using the "get" method:
+const chosenRoll = params.get("roll");
+console.log(chosenRoll);
+// USE URL parameter to Update the image of selected cinnamon roll
+const rollImage = document.querySelector(".rollImg");
+rollImage.src = "../assets/" + chosenRoll + "-cinnnamon-roll.jpeg";
+
+// animalImage.src = "./assets/warhol-" + chosenAnimal + ".png";
