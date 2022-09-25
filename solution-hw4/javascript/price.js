@@ -115,8 +115,9 @@ console.log(params);
 // Finally, we can access the parameter we want using the "get" method:
 const chosenRoll = params.get("roll");
 console.log(chosenRoll);
-// USE URL parameter to Update the image of selected cinnamon roll
+// Update the header text
+const rollHeader = document.querySelector(".rollHeader");
+rollHeader.innerText = chosenRoll + " cinnamon roll";
+// Use URL parameter to Update the image of selected cinnamon roll
 const rollImage = document.querySelector(".rollImg");
-rollImage.src = "../assets/" + chosenRoll + "-cinnnamon-roll.jpeg";
-
-// animalImage.src = "./assets/warhol-" + chosenAnimal + ".png";
+rollImage.src = "";
