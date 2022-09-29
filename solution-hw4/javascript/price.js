@@ -41,6 +41,9 @@ let packPriceAdapt = [
 // Initializing the indexes
 let glazingIndex = 0;
 let packIndex = 0;
+// Initiializing an empty array for cart
+let cart = [];
+// Building a Roll class to store all current product informaiton
 class Roll {
   constructor(rollType, rollGlazing, packSize, basePrice) {
     this.type = rollType;
@@ -48,14 +51,6 @@ class Roll {
     this.size = packSize;
     this.basePrice = basePrice;
   }
-}
-
-let cart = [];
-function addCart() {
-  let roll = new Roll(chosenRoll, "A", "B", rolls[chosenRoll].basePrice);
-  cart.push(roll);
-  console.log(roll);
-  console.log(cart);
 }
 
 // Search parameters that get the list of string from the URL.
@@ -112,4 +107,15 @@ selectPack.addEventListener("change", onSelectValueChangePack);
 // Call the function to get the total price
 calculateTotal(glazingIndex, packIndex);
 
-/* --------------------- Below is to update product detail page ---------------------------- */
+// Add the instance of selected roll to the cart array
+function addCart() {
+  let roll = new Roll(
+    chosenRoll,
+    glazingIndex,
+    packIndex,
+    rolls[chosenRoll].basePrice
+  );
+  cart.push(roll);
+  console.log(roll);
+  console.log(cart);
+}
