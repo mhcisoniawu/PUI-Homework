@@ -25,10 +25,3 @@ const rolls = {
     imageFile: "strawberry-cinnamon-roll.jpeg",
   },
 };
-
-// Create an empty array for cart
-let cart = [];
-// Parse the URL parameter and store the current roll type as a variableode
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const rollType = params.get("roll");

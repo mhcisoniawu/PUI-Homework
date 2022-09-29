@@ -41,6 +41,39 @@ let packPriceAdapt = [
 // Initializing the indexes
 let glazingIndex = 0;
 let packIndex = 0;
+class Roll {
+  constructor(rollType, rollGlazing, packSize, basePrice) {
+    this.type = rollType;
+    this.glazing = rollGlazing;
+    this.size = packSize;
+    this.basePrice = basePrice;
+  }
+}
+
+let cart = [];
+function addCart() {
+  let roll = new Roll(chosenRoll, "A", "B", rolls[chosenRoll].basePrice);
+  cart.push(roll);
+  console.log(roll);
+  console.log(cart);
+}
+
+// Search parameters that get the list of string from the URL.
+const queryString = window.location.search;
+// Then, we use the query string to create a URLSearchParams object:
+const params = new URLSearchParams(queryString);
+// Finally, we can access the parameter we want using the "get" method:
+let chosenRoll = params.get("roll");
+// Update the header text
+let rollHeader = document.querySelector(".rollHeader");
+rollHeader.innerText = chosenRoll + " cinnamon roll";
+// Use URL parameter to Update the image of selected cinnamon roll
+let rollImage = document.querySelector(".productDetailPic");
+rollImage.src = "../assets/" + chosenRoll + "-cinnamon-roll.jpeg";
+// Update baseprice for each type of cinnamon roll
+let cusPrice = document.querySelector(".cusPrice");
+cusPrice.innerText = rolls[chosenRoll].basePrice;
+console.log(cusPrice.innerText);
 
 // Take the price from adpatation arrays and calculate the total amount of money
 function calculateTotal(glazingIndex, packIndex) {
@@ -48,7 +81,10 @@ function calculateTotal(glazingIndex, packIndex) {
   let glazingPrice = glazingPriceAdapt[glazingIndex].price;
   let packPrice = packPriceAdapt[packIndex].price;
   // Update the total price and round to 2 decimals
-  cusPrice.innerText = ((2.49 + glazingPrice) * packPrice).toFixed(2);
+  cusPrice.innerText = (
+    (rolls[chosenRoll].basePrice + glazingPrice) *
+    packPrice
+  ).toFixed(2);
 }
 
 // Runs whenever the glazing dropdown's value changes
@@ -76,20 +112,4 @@ selectPack.addEventListener("change", onSelectValueChangePack);
 // Call the function to get the total price
 calculateTotal(glazingIndex, packIndex);
 
-/* --------------------- Below is URL parameters for HW4 ------------------------------- */
-
-// Search parameters that get the list of string from the URL.
-const queryString = window.location.search;
-console.log(queryString);
-// Then, we use the query string to create a URLSearchParams object:
-const params = new URLSearchParams(queryString);
-console.log(params);
-// Finally, we can access the parameter we want using the "get" method:
-const chosenRoll = params.get("roll");
-console.log(chosenRoll);
-// Update the header text
-let rollHeader = document.querySelector(".rollHeader");
-rollHeader.innerText = chosenRoll + " cinnamon roll";
-// Use URL parameter to Update the image of selected cinnamon roll
-let rollImage = document.querySelector(".productDetailPic");
-rollImage.src = "../assets/" + chosenRoll + "-cinnamon-roll.jpeg";
+/* --------------------- Below is to update product detail page ---------------------------- */
