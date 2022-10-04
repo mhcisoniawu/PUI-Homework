@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <script src="../javascript/rollData.js" defer></script>
+  <script src="../javascript/price.js" defer></script>
+  <title>Prouduct Detail</title>
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <body>
+    <!--The entire page-->
+    <div class="pageBody">
+      <div class="navBar">
+        <!--Bub Bun logo-->
+        <div class="navBarLogo">
+          <a href="../index.html">
+            <img
+              class="logo"
+              src="../assets/logo-01.svg"
+              alt="An illustration of BunBun Bake Shop"
+          /></a>
+        </div>
+        <div>
+          <!-- The navigation bar -->
+          <div class="navBarProduct">
+            <h1>
+              <a class="link2Gallery" href="../index.html">PRODUCTS</a>
+            </h1>
+            <h2>
+              <a class="link2Cart" href="shoppingCart.html">CART</a>
+            </h2>
+          </div>
+          <div><hr class="navBarLine" /></div>
+          <br />
+          <div>
+            <h3 class="rollHeader">Original Cinnamon Roll</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="detailBox">
+        <img
+          class="productDetailPic"
+          src="../assets/original-cinnamon-roll.jpeg"
+          alt="Original Cinnamon Roll in Detail"
+        />
+        <!--Entire section of dropdown selection-->
+        <div class="mySelection">
+          <h4>
+            Customize our delicious, <br />
+            hand-made cinammon roll to your liking!
+          </h4>
+          <!--Options for glazing-->
+          <h5>Glazing:</h5>
+          <select id="glazingOptions">
+            <option value="0">Keep original</option>
+            <option value="1">Sugar milk</option>
+            <option value="2">Vanilla milk</option>
+            <option value="3">Double chocolate</option>
+          </select>
+          <!--Options for pack size-->
+          <h5>Pack size:</h5>
+          <select id="packOptions">
+            <option value="0">1</option>
+            <option value="1">3</option>
+            <option value="2">6</option>
+            <option value="3">12</option></select
+          ><br />
+          <br />
+          <!--Add to cart action and total price after customization-->
+          <div class="addCustomize">
+            <p class="cusPrice">$2.49</p>
+            <button type="button" id="addToCart" onclick="addCart()">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
