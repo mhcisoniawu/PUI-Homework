@@ -29,15 +29,6 @@ h5 {
   font-weight: lighter;
 }
 
-/* Remove texts */
-h6 {
-  font-family: sans-serif;
-  font-size: 10px;
-  margin-top: 3px;
-  text-align: left;
-  text-decoration: underline;
-}
-
 img {
   border: 2px solid black;
   display: block;
@@ -73,7 +64,7 @@ p {
 }
 
 .navBarLine {
-  width: 750px;
+  width: 1000px;
 }
 
 .navBarProduct {
@@ -152,8 +143,8 @@ select {
 }
 
 /* Features on Shopping Cart page*/
-.cartImage {
-  border: 2px solid black;
+.rollImage {
+  border: 3px solid black;
   width: 100px;
 }
 
@@ -183,6 +174,7 @@ select {
 
 .checkoutLine {
   margin-left: 440px;
+  width: 1000px;
 }
 
 .shoppingBox {
@@ -194,12 +186,11 @@ select {
 .shoppingBox2 {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 360px;
+  margin-left: 255px;
 }
 
 .shoppingBox4 {
   display: flex;
-  justify-content: flex-end;
   justify-content: space-around;
   margin-left: 550px;
   gap: 240px;
@@ -208,4 +199,14 @@ select {
 .shoppingBox5 {
   margin-left: auto;
   padding-right: 70px;
+}
+
+#remove {
+  background-color: white;
+  border: none;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: left;
 }

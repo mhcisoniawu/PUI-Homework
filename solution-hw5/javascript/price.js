@@ -38,109 +38,124 @@ let packPriceAdapt = [
   },
 ];
 
-// Initializing the indexes
+// Initialize the indexes
 let glazingIndex = 0;
 let packIndex = 0;
-// Initiializing an empty array for cart
-let cart = [];
+// Initialize an empty set for cart
+const cart = new Set();
 // Building a Roll class to store all current product informaiton
 class Roll {
-  constructor(rollType, rollGlazing, packSize, basePrice) {
+  constructor(image, rollType, rollGlazing, packSize, basePrice) {
+    this.image = image;
     this.type = rollType;
     this.glazing = rollGlazing;
     this.size = packSize;
     this.basePrice = basePrice;
+    this.element = null;
   }
 }
 
-// This function creates a new Roll object,
-// and adds it to cart array
-function addNewRoll(rollType, rollGLazing, packSize, basePrice) {
-  const rollinCart = new Roll(rollType, rollGLazing, packSize, basePrice);
-  cart.push(rollinCart);
+// Creates a new Roll object
+function addNewRoll(image, rollType, rollGLazing, packSize, basePrice) {
+  const rollinCart = new Roll(
+    image,
+    rollType,
+    rollGLazing,
+    packSize,
+    basePrice
+  );
+  // add it to the cartset
+  cart.add(rollinCart);
   return rollinCart;
 }
 
-// Add four rolls given in the HW5 instruction
-addNewRoll("Original", "Sugar Milk", 1, 2.49);
-addNewRoll("Walnut", "Vanilla Milk", 12, 39.9);
-addNewRoll("Raisin", "Sugar Milk", 3, 8.97);
-addNewRoll("Apple", "Original", 3, 10.47);
-
+// Make a clone of the cartTemplate
 function createRoll(rollinCart) {
-  // make a clone of the cartTemplate
   const template = document.querySelector("#cartTemplate");
   const clone = template.content.cloneNode(true);
-}
-// connect this clone to our rollinCart.element
-rollinCart.element = clone.querySelector(".shoppingBox1");
+  // Connect this clone to our rollinCart.element
+  rollinCart.element = clone.querySelector(".shoppingBox1");
 
-function displayCartItem() {}
+  const btnDelete = rollinCart.element.querySelector("#remove");
+  console.log(btnDelete);
+  btnDelete.addEventListener("click", () => {
+    deleteRoll(rollinCart);
+  });
 
-function removeRoll() {}
-
-// Search parameters that get the list of string from the URL.
-const queryString = window.location.search;
-// Then, we use the query string to create a URLSearchParams object:
-const params = new URLSearchParams(queryString);
-// Finally, we can access the parameter we want using the "get" method:
-let chosenRoll = params.get("roll");
-// Update the header text
-let rollHeader = document.querySelector(".rollHeader");
-rollHeader.innerText = chosenRoll + " cinnamon roll";
-// Use URL parameter to Update the image of selected cinnamon roll
-let rollImage = document.querySelector(".productDetailPic");
-rollImage.src = "../assets/" + chosenRoll + "-cinnamon-roll.jpeg";
-// Update baseprice for each type of cinnamon roll
-let cusPrice = document.querySelector(".cusPrice");
-cusPrice.innerText = rolls[chosenRoll].basePrice;
-
-// Take the price from adpatation arrays and calculate the total amount of money
-function calculateTotal(glazingIndex, packIndex) {
-  let cusPrice = document.querySelector(".cusPrice");
-  let glazingPrice = glazingPriceAdapt[glazingIndex].price;
-  let packPrice = packPriceAdapt[packIndex].price;
-  // Update the total price and round to 2 decimals
-  cusPrice.innerText = (
-    (rolls[chosenRoll].basePrice + glazingPrice) *
-    packPrice
-  ).toFixed(2);
+  // add the notecard clone to the DOM
+  const rollinCartListElement = document.querySelector("#shoppingBox");
+  rollinCartListElement.prepend(rollinCart.element);
+  // populate the rollinCart clone with the actual roll content
+  updateElement(rollinCart);
 }
 
-// Runs whenever the glazing dropdown's value changes
-function onSelectValueChangeGlazing() {
-  glazingIndex = parseInt(this.value);
-  calculateTotal(glazingIndex, packIndex);
+function updateElement(rollinCart) {
+  // get the HTML elements that need updating
+  const rollImageElement = rollinCart.element.querySelector(".rollImage");
+  const rollTypeElement = rollinCart.element.querySelector(".rollType");
+  const rollGlazingElement = rollinCart.element.querySelector(".rollGlazing");
+  const rollPackElement = rollinCart.element.querySelector(".rollPack");
+  const rollPriceElement = rollinCart.element.querySelector(".rollPrice");
+
+  // copy our roll contents over to the corresponding HTML elements
+  rollImageElement.src = rollinCart.image;
+  rollTypeElement.innerText = rollinCart.type + " Cinnamon Roll";
+  rollGlazingElement.innerText = "Glazing:" + rollinCart.glazing;
+  rollPackElement.innerText = "Pack Size:" + rollinCart.size;
+  rollPriceElement.innerText = "$ " + rollinCart.basePrice;
+
+  calculateTotal();
 }
 
-// Runs whenever the pack dropdown's value changes
-function onSelectValueChangePack() {
-  packIndex = parseInt(this.value);
-  calculateTotal(glazingIndex, packIndex);
+function deleteRoll(rollinCart) {
+  // remove the roll DOM object from the UI
+  rollinCart.element.remove();
+  // remove the actual Notecard object from our set of notecards
+  cart.delete(rollinCart);
+  updateElement(rollinCart);
 }
 
-// Find the selected glazing when productDetail page loads
-let selectGlazing = document.querySelector("#glazingOptions");
-// Find the selected pack size when productDetail page loads
-let selectPack = document.querySelector("#packOptions");
+function calculateTotal() {
+  let price = 0;
+  basePriceElement = document.querySelector(".shoppingBox4");
+  for (const rollinCart of cart) {
+    price += rollinCart.basePrice;
+    console.log(price);
+  }
+  basePriceElement.innerText = "$" + parseFloat(price.toFixed(2));
+}
 
-// This is a listener that runs when the user make changes in the glazing dropdown
-selectGlazing.addEventListener("change", onSelectValueChangeGlazing);
-// This is a listener that runs when the user make changes in the pack dropdown
-selectPack.addEventListener("change", onSelectValueChangePack);
+addNewRoll(
+  "../assets/original-cinnamon-roll.jpeg",
+  "Original",
+  "Sugar Milk",
+  1,
+  2.49
+);
 
-// Call the function to get the total price
-calculateTotal(glazingIndex, packIndex);
+addNewRoll(
+  "../assets/walnut-cinnamon-roll.jpeg",
+  "Walnut",
+  "Vanilla Milk",
+  12,
+  39.9
+);
+addNewRoll(
+  "../assets/raisin-cinnamon-roll.jpeg",
+  "Raisin",
+  "Sugar Milk",
+  3,
+  8.97
+);
+addNewRoll(
+  "../assets/apple-cinnamon-roll.jpeg",
+  "Apple",
+  "Keep Original",
+  3,
+  10.47
+);
 
-// Add the instance of selected roll to the cart array
-function addCart() {
-  let roll = new Roll(
-    chosenRoll,
-    glazingIndex,
-    packIndex,
-    rolls[chosenRoll].basePrice
-  );
-  cart.push(roll);
-  console.log(roll);
-  console.log(cart);
+for (const rollinCart of cart) {
+  // console.log(rollinCart);
+  createRoll(rollinCart);
 }
