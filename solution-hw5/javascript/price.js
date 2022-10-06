@@ -53,13 +53,10 @@ class Roll {
   }
 }
 
-// This function creates a new Roll object, and adds it to cart array
+// This function creates a new Roll object,
+// and adds it to cart array
 function addNewRoll(rollType, rollGLazing, packSize, basePrice) {
-  // Create a new roll object. The roll constructor takes four
-  // arguments: rollType, rollGlazing, packSize, and basePrice
   const rollinCart = new Roll(rollType, rollGLazing, packSize, basePrice);
-
-  // Add the roll object to our cart array , which keeps track of all the rolls in our application.
   cart.push(rollinCart);
   return rollinCart;
 }
@@ -70,12 +67,13 @@ addNewRoll("Walnut", "Vanilla Milk", 12, 39.9);
 addNewRoll("Raisin", "Sugar Milk", 3, 8.97);
 addNewRoll("Apple", "Original", 3, 10.47);
 
-
 function createRoll(rollinCart) {
-  // make a clone of the notecard template
-  const template = document.querySelector('#notecard-template');
+  // make a clone of the cartTemplate
+  const template = document.querySelector("#cartTemplate");
   const clone = template.content.cloneNode(true);
-
+}
+// connect this clone to our rollinCart.element
+rollinCart.element = clone.querySelector(".shoppingBox1");
 
 function displayCartItem() {}
 

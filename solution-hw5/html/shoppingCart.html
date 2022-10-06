@@ -37,27 +37,29 @@
         </div>
       </div>
 
-      <div class="shoppingBox">
+      <div class="shoppingBox">         
+        <template id="cartTemplate">
         <!--First item in cart -->
-        <div class="shoppingBox1">
-          <div>
-            <img
-              class="cartImage"
-              src="../assets/original-cinnamon-roll.jpeg"
-              alt="photo of origianl cinnamon roll"
-            />
-            <!-- Remove action-->
-            <h6>Remove</h6>
+          <div class="shoppingBox1">
+            <div>
+              <img
+                class="cartImage"
+                src="../assets/original-cinnamon-roll.jpeg"
+                alt="photo of origianl cinnamon roll"
+              />
+              <!-- Remove action-->
+              <h6>Remove<h6>
+            </div>
+            <div>
+              <p class="cartInfo">
+                Original Cinnamon Roll<br />
+                Glazing: Keep original<br />
+                Pack Size: 1 <br />
+              </p>
+            </div>
+            <div><p class="cartInfoPrice">$ 2.49</p></div>
           </div>
-          <div>
-            <p class="cartInfo">
-              Original Cinnamon Roll<br />
-              Glazing: Keep original<br />
-              Pack Size: 1 <br />
-            </p>
-          </div>
-          <div><p class="cartInfoPrice">$ 2.49</p></div>
-        </div>
+        </template>
         <!-- Second item in cart -->
         <div class="shoppingBox2">
           <div>
