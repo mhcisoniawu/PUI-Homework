@@ -122,7 +122,8 @@ function calculateTotal() {
     price += rollinCart.basePrice;
     console.log(price);
   }
-  basePriceElement.innerText = "$" + parseFloat(price.toFixed(2));
+  basePriceElement.innerText =
+    "Total" + "             " + "$" + parseFloat(price.toFixed(2));
 }
 
 addNewRoll(

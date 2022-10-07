@@ -143,6 +143,7 @@ select {
 }
 
 /* Features on Shopping Cart page*/
+
 .rollImage {
   border: 3px solid black;
   width: 100px;
@@ -170,10 +171,11 @@ select {
   padding: 5px;
   text-align: center;
   width: 100px;
+  margin-left: 1000px;
 }
 
 .checkoutLine {
-  margin-left: 440px;
+  margin-left: 370px;
   width: 1000px;
 }
 
@@ -186,7 +188,7 @@ select {
 .shoppingBox2 {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 255px;
+  margin-left: 300px;
 }
 
 .shoppingBox4 {
@@ -194,11 +196,6 @@ select {
   justify-content: space-around;
   margin-left: 550px;
   gap: 240px;
-}
-
-.shoppingBox5 {
-  margin-left: auto;
-  padding-right: 70px;
 }
 
 #remove {
@@ -209,4 +206,17 @@ select {
   font-weight: bold;
   font-family: sans-serif;
   text-align: left;
+}
+
+.rollOverall {
+  font-family: sans-serif;
+  margin-top: 2px;
+  line-height: 5px;
+}
+
+.rollPrice {
+  text-align: right;
+}
+
+.cartImageAndRemove {
 }
