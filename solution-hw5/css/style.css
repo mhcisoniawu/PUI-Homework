@@ -17,7 +17,7 @@ h2 {
   font-weight: lighter;
 }
 
-/* Our hand-made cinnamon rolls */
+/* Sub-heading below top divider */
 h3 {
   font-weight: lighter;
   margin: auto;
@@ -103,7 +103,7 @@ p {
   margin-right: auto;
 }
 
-/* Feautres on Product Detail page*/
+/* Feautres in Product Detail page*/
 
 /* Dropdown selections */
 select {
@@ -142,7 +142,7 @@ select {
   width: 550px;
 }
 
-/* Features on Shopping Cart page*/
+/* Features in Shopping Cart page*/
 
 .rollImage {
   border: 3px solid black;
@@ -171,12 +171,12 @@ select {
   padding: 5px;
   text-align: center;
   width: 100px;
-  margin-left: 1000px;
+  margin-left: auto;
 }
 
 .checkoutLine {
   margin-left: 370px;
-  width: 1000px;
+  width: 1100px;
 }
 
 .shoppingBox {
@@ -187,15 +187,12 @@ select {
 .shoppingBox1,
 .shoppingBox2 {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 300px;
+  margin-left: 400px;
 }
 
 .shoppingBox4 {
   display: flex;
-  justify-content: space-around;
-  margin-left: 550px;
-  gap: 240px;
+  margin-left: 1130px;
 }
 
 #remove {
@@ -206,17 +203,20 @@ select {
   font-weight: bold;
   font-family: sans-serif;
   text-align: left;
+  margin-bottom: 16px;
+  padding-left: 0px;
 }
 
 .rollOverall {
   font-family: sans-serif;
   margin-top: 2px;
   line-height: 5px;
+  padding-right: 10px;
+  padding-left: 20px;
+  width: 600px;
 }
 
 .rollPrice {
   text-align: right;
-}
-
-.cartImageAndRemove {
+  width: 200px;
 }
