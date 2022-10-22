@@ -1,0 +1,222 @@
+/* Divider */
+hr {
+  border: solid 2px;
+}
+
+/* Highlighted item on navigation bar  */
+h1 {
+  background: yellow;
+  font-size: 20px;
+  margin: 30px;
+}
+
+/* Non-highlighted item on navigation bar */
+h2 {
+  font-size: 20px;
+  margin: 30px;
+  font-weight: lighter;
+}
+
+/* Sub-heading below top divider */
+h3 {
+  font-weight: lighter;
+  margin: auto;
+}
+
+/* H4 is detail description; H5 is selection title */
+h4,
+h5 {
+  font-weight: lighter;
+}
+
+img {
+  border: 2px solid black;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+}
+
+/* Common features (logo, entire page, navigation) appeared in all 3 pages */
+.logo {
+  border-style: none;
+  height: 300px;
+  width: 400px;
+}
+
+.pageBody {
+  font-family: sans-serif;
+  font-weight: lighter;
+  width: 1200px;
+}
+.navBar {
+  align-items: center;
+  display: flex;
+}
+
+.navBarLogo {
+  flex: 1.2;
+}
+
+.navBarLine {
+  width: 1000px;
+}
+
+.navBarProduct {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.link2Cart,
+.link2Gallery:link {
+  text-decoration: none;
+}
+
+.link2Cart,
+.link2Gallery:visited {
+  color: black;
+}
+
+/* Features in Gallery page + Common features in Gallery/Product Detail page */
+.itemInfo,
+.mySelection {
+  margin: auto;
+  width: 300px;
+}
+
+.itemInfo:hover {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.galleryView {
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feautres in Product Detail page*/
+
+/* Dropdown selections */
+select {
+  border: 3px solid;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 10px;
+  width: 180px;
+}
+
+/* Add to cart button */
+#addToCart {
+  background-color: yellow;
+  border: 2px solid;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.detailBox {
+  display: flex;
+}
+
+.addCustomize {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 120px;
+  font-weight: bold;
+}
+
+.productDetailPic {
+  border: 2px solid black;
+  width: 550px;
+}
+
+/* Features in Shopping Cart page*/
+
+.rollImage {
+  border: 3px solid black;
+  width: 100px;
+}
+
+.cartInfo {
+  text-align: left;
+  width: 350px;
+}
+
+.cartInfoPrice {
+  font-size: 20px;
+}
+
+.totalPrice {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.checkout {
+  background-color: yellow;
+  border: 2px solid;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+  margin-left: auto;
+}
+
+.checkoutLine {
+  margin-left: 370px;
+  width: 1100px;
+}
+
+.shoppingBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoppingBox1,
+.shoppingBox2 {
+  display: flex;
+  margin-left: 400px;
+}
+
+.shoppingBox4 {
+  display: flex;
+  margin-left: 1130px;
+}
+
+#remove {
+  background-color: white;
+  border: none;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: left;
+  margin-bottom: 16px;
+  padding-left: 0px;
+}
+
+.rollOverall {
+  font-family: sans-serif;
+  margin-top: 2px;
+  line-height: 5px;
+  padding-right: 10px;
+  padding-left: 20px;
+  width: 600px;
+}
+
+.rollPrice {
+  text-align: right;
+  width: 200px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <script src="../javascript/price.js" defer></script>
+  <script src="../javascript/rollData.js" defer></script>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <body>
+    <!--The entire page-->
+    <div class="pageBody">
+      <div class="navBar">
+        <!--Bub Bun logo-->
+        <div class="navBarLogo">
+          <a href="../index.html">
+            <img
+              class="logo"
+              src="../assets/logo-01.svg"
+              alt="An illustration of BunBun Bake Shop"
+          /></a>
+        </div>
+        <div>
+          <!-- The navigation bar -->
+          <div class="navBarProduct">
+            <h2>
+              <a class="link2Gallery" href="../index.html">PRODUCTS</a>
+            </h2>
+            <h1>
+              <a class="link2Cart" href="shoppingCart.html">CART</a>
+            </h1>
+          </div>
+          <div><hr class="navBarLine" /></div>
+          <br />
+          <div>
+            <h3>Shopping Cart</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="shoppingBox">
+        <!--First item in cart -->
+        <template id="cartTemplate">
+          <div class="shoppingBox1">
+            <div class="cartImageAndRemove">
+              <img
+                class="rollImage"
+                src="../assets/original-cinnamon-roll.jpeg"
+                alt="photo of origianl cinnamon roll"
+              />
+              <!-- Remove action-->
+              <button type="button" id="remove">Remove</button>
+            </div>
+            <div class="rollOverall">
+              <p class="rollType"></p>
+              <p class="rollGlazing"></p>
+              <p class="rollPack"></p>
+            </div>
+            <div><p class="rollPrice"></p></div>
+          </div>
+        </template>
+        </div>
+        <!--Check out divider -->
+        <div class="shoppingBox3"><hr class="checkoutLine" /></div>
+        <!-- Total Price -->
+        <div class="shoppingBox4">
+        <div>Total</div>
+        </div>
+        <br />
+        <!-- Check out button-->
+          <div class="checkout">Checkout</div> 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
