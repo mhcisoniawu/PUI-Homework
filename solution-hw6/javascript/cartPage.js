@@ -1,46 +1,3 @@
-// Declare an array of glazing price adaptaions
-let glazingPriceAdapt = [
-  {
-    glazing: "Original",
-    price: 0.0,
-  },
-  {
-    glazing: "Sugar Milk",
-    price: 0.0,
-  },
-  {
-    glazing: "Vanilla Milk",
-    price: 0.5,
-  },
-  {
-    glazing: "Double Chocolate",
-    price: 1.5,
-  },
-];
-
-// Declare an array of pack price adaptaions
-let packPriceAdapt = [
-  {
-    size: "1",
-    price: 1,
-  },
-  {
-    size: "3",
-    price: 3,
-  },
-  {
-    size: "6",
-    price: 5,
-  },
-  {
-    size: "12",
-    price: 10,
-  },
-];
-
-// Initialize the indexes
-let glazingIndex = 0;
-let packIndex = 0;
 // Initialize an empty set for cart
 const cart = new Set();
 // Building a Roll class to store all current product informaiton
@@ -103,7 +60,6 @@ function updateElement(rollinCart) {
   rollGlazingElement.innerText = "Glazing:" + rollinCart.glazing;
   rollPackElement.innerText = "Pack Size:" + rollinCart.size;
   rollPriceElement.innerText = "$ " + rollinCart.basePrice;
-
   calculateTotal();
 }
 
