@@ -41,9 +41,8 @@ let packPriceAdapt = [
 // Initialize the indexes
 let glazingIndex = 0;
 let packIndex = 0;
-// Initialize an empty array for cart
+// Initialize an empty array for product
 let product = [];
-
 let productStorage = localStorage.getItem("storeRolls");
 
 // Build a Roll class to store all current product informaiton
@@ -58,9 +57,9 @@ class Roll {
 
 // Search parameters that get the list of string from the URL.
 const queryString = window.location.search;
-// Use the query string to create a URLSearchParams object:
+// Use the query string to create a URLSearchParams object
 const params = new URLSearchParams(queryString);
-// Access the parameter we want using the "get" method:
+// Access the parameter we want using the "get" method
 let chosenRoll = params.get("roll");
 // Update the header text
 let rollHeader = document.querySelector(".rollHeader");
@@ -111,31 +110,35 @@ selectPack.addEventListener("change", onSelectValueChangePack);
 calculateTotal(glazingIndex, packIndex);
 
 // Add the instance of selected roll to the cart array
-function addProudct() {
+function addProduct() {
   let roll = new Roll(
     chosenRoll,
     glazingIndex,
     packIndex,
     rolls[chosenRoll].basePrice
   );
+
   product.push(roll);
-  console.log(roll);
+  // console.log(roll);
   console.log(product);
 
   saveToLocalStorage();
 }
 
+// Convert the updated cart to JSON and save it in the local storage
 function saveToLocalStorage() {
   const rollArrayString = JSON.stringify(product);
   localStorage.setItem("storedRolls", rollArrayString);
 }
 
-// function retrieveFromLocalStorage() {
-//  const rollArrayString = localStorage.getItem("storedRolls");
-//  const rollArray = JSON.parse(rollArrayString);
-//  cart = rollArray;
-// }
+function retrieveFromLocalStorage() {
+  const rollArrayString = localStorage.getItem("storedRolls");
+  const rollArray = JSON.parse(rollArrayString);
+  product = rollArray;
+}
 
-// if (localStorage.getItem("storedRolls") != null) {
-//   retrieveFromLocalStorage();
-// }
+// print the current contents of the cart in local storage after saving.
+if (localStorage.getItem("storedRolls") != null) {
+  console.log("ITS NOT NULL");
+  retrieveFromLocalStorage();
+}

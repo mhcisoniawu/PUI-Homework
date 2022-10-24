@@ -34,7 +34,7 @@ function createRoll(rollinCart) {
   rollinCart.element = clone.querySelector(".shoppingBox1");
 
   const btnDelete = rollinCart.element.querySelector("#remove");
-  console.log(btnDelete);
+  // console.log(btnDelete);
   btnDelete.addEventListener("click", () => {
     deleteRoll(rollinCart);
   });
@@ -76,7 +76,7 @@ function calculateTotal() {
   basePriceElement = document.querySelector(".shoppingBox4");
   for (const rollinCart of cart) {
     price += rollinCart.basePrice;
-    console.log(price);
+    // console.log(price);
   }
   basePriceElement.innerText = "$" + parseFloat(price.toFixed(2));
 }
