@@ -120,8 +120,7 @@ function addProduct() {
 
   product.push(roll);
   // console.log(roll);
-  console.log(product);
-
+  // console.log(product);
   saveToLocalStorage();
 }
 
@@ -139,6 +138,6 @@ function retrieveFromLocalStorage() {
 
 // print the current contents of the cart in local storage after saving.
 if (localStorage.getItem("storedRolls") != null) {
-  console.log("ITS NOT NULL");
+  // console.log("The product cart is not full");
   retrieveFromLocalStorage();
 }
