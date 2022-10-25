@@ -119,8 +119,6 @@ function addProduct() {
   );
 
   product.push(roll);
-  // console.log(roll);
-  // console.log(product);
   saveToLocalStorage();
 }
 
@@ -130,14 +128,13 @@ function saveToLocalStorage() {
   localStorage.setItem("storedRolls", rollArrayString);
 }
 
+// Retrieve from local storage
 function retrieveFromLocalStorage() {
   const rollArrayString = localStorage.getItem("storedRolls");
   const rollArray = JSON.parse(rollArrayString);
   product = rollArray;
 }
 
-// print the current contents of the cart in local storage after saving.
 if (localStorage.getItem("storedRolls") != null) {
-  // console.log("The product cart is not full");
   retrieveFromLocalStorage();
 }

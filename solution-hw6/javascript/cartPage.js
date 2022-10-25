@@ -40,7 +40,6 @@ const packPriceAdaptation = [
 
 // Print the current contents of the cart in local storage after saving
 if (localStorage.getItem("storedRolls") != null) {
-  console.log("The cart is not full");
   retrieveFromLocalStorage();
 }
 
@@ -119,7 +118,7 @@ function updateElement(rollinCart) {
 function deleteRoll(rollinCart) {
   // Remove the roll DOM object from the UI
   rollinCart.element.remove();
-  // Remove the actual Notecard object from our set of notecards
+  // Make sure it deletes the selected item
   cart.forEach((cartItem) => {
     if (
       rollinCart.type === cartItem.type &&
@@ -154,11 +153,13 @@ for (const rollinCart of cart) {
   createRoll(rollinCart);
 }
 
+// Convert the updated cart to JSON and save it in the local storage
 function saveToLocalStorage() {
   const rollArrayString = JSON.stringify(storedCart);
   localStorage.setItem("storedRolls", rollArrayString);
 }
 
+// Retrieve from local storage
 function retrieveFromLocalStorage() {
   const rollArrayString = localStorage.getItem("storedRolls");
   const rollArray = Array.from(JSON.parse(rollArrayString));
