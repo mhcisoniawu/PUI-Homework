@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submission</title>
+    <script src="javascript/landingPage.js" defer></script>
+    <script src="javascript/typed.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="assets/rock-background.png"
+        alt="three blue 3D shapes that represent climbing holds"
+      />
+    </div>
+    <div class="center" id="dropdown">
+      <div class="typed">
+        <h1>Tell me more about your <span class="subAnim"> </span></h1>
+      </div>
+      <script>
+        var typed = new Typed(".subAnim", {
+          strings: ["", "Send.^1000", "Struggle.^1000", "Success.^1000"],
+          typeSpeed: 70,
+          backSpeed: 70,
+          loop: true,
+        });
+      </script>
+
+      <div>
+        <label for="grade">Grade:</label>
+        <select name="grade" id="grade">
+          <option value="v2">V2</option>
+          <option value="v3">V3</option>
+          <option value="v4">V4</option>
+          <option value="v5">V5</option>
+          <option value="v6">V6</option>
+          <option value="v6+">V6+</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="terrain">Terrain:</label>
+        <select name="terrain" id="terrain">
+          <option value="arate">Arate</option>
+          <option value="face">Face</option>
+          <option value="slab">Slab</option>
+          <option value="mixed">Mixed</option>
+          <option value="roof">Roof</option>
+          <option value="overhang">Overhang</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="holdStyle">Hold Style:</label>
+        <select name="holdStyle" id="holdStyle">
+          <option value="crimp">Crimp</option>
+          <option value="pinch">Pinch</option>
+          <option value="sloper">Sloper</option>
+          <option value="undercling">Undercling</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="move">Move:</label>
+        <select name="move" id="move">
+          <option value="dyno">Dyno</option>
+          <option value="dyno">Coordination</option>
+          <option value="tension">Tension</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="attemptNum">Number of Attempts:</label>
+        <select name="attemptNum" id="attemptNum">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="3+">3+</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gym">Gym:</label>
+        <select name="gym" id="gym">
+          <option value="acdSS">Ascend-South Side</option>
+          <option value="acdPB">Ascend-Point Breeze</option>
+        </select>
+      </div>
+
+      <section>
+        <button class="show-modal">Submit</button>
+        <span class="overlay"></span>
+
+        <div class="modal-box">
+          <i class="fa-regular fa-circle-check"></i>
+          <h2>Submitted</h2>
+          <h3>
+            You have sucessfully submitted information about this sick climb 🥳
+          </h3>
+
+          <div class="buttons">
+            <button class="close-btn">Submit Another</button>
+            <a href="html/dashboard.html">
+              <button type="button">Check dashboard</button></a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

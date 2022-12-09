@@ -1,0 +1,281 @@
+{
+  "data": {
+    "values": [
+      {
+        "Num": 1,
+        "Grade": "V3",
+        "Terrain": "Slab",
+        "Hold Style": "Crimp",
+        "Move": "Dyno",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 2,
+        "Grade": "V2",
+        "Terrain": "Slab",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 3,
+        "Grade": "V3",
+        "Terrain": "Slab",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 4,
+        "Grade": "V6",
+        "Terrain": "Overhang",
+        "Hold Style": "Crimp",
+        "Move": "Dyno",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 5,
+        "Grade": "V3",
+        "Terrain": "Overhang",
+        "Hold Style": "Crimp",
+        "Move": "Dyno",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 6,
+        "Grade": "V3",
+        "Terrain": "Mixed",
+        "Hold Style": "Crimp",
+        "Move": "Dyno",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 7,
+        "Grade": "V6+",
+        "Terrain": "Overhang",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 8,
+        "Grade": "V3",
+        "Terrain": "Face",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 9,
+        "Grade": "V3",
+        "Terrain": "Overhang",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": "3",
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 10,
+        "Grade": "V3",
+        "Terrain": "Mixed",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": "3",
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 11,
+        "Grade": "V4",
+        "Terrain": "Overhang",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": "3",
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 12,
+        "Grade": "V5",
+        "Terrain": "Overhang",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": "3",
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 13,
+        "Grade": "V5",
+        "Terrain": "Arate",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": "3",
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 14,
+        "Grade": "V5",
+        "Terrain": "Arate",
+        "Hold Style": "Crimp",
+        "Move": "Tension",
+        "Attempts": "3",
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 15,
+        "Grade": "V5",
+        "Terrain": "Overhang",
+        "Hold Style": "Sloper",
+        "Move": "Dyno",
+        "Attempts": 1,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 16,
+        "Grade": "V5",
+        "Terrain": "Overhang",
+        "Hold Style": "Sloper",
+        "Move": "Dyno",
+        "Attempts": 2,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 17,
+        "Grade": "V5",
+        "Terrain": "Overhang",
+        "Hold Style": "Sloper",
+        "Move": "Dyno",
+        "Attempts": 2,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 18,
+        "Grade": "V5",
+        "Terrain": "Overhang",
+        "Hold Style": "Sloper",
+        "Move": "Tension",
+        "Attempts": 3,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 19,
+        "Grade": "V5",
+        "Terrain": "Overhang",
+        "Hold Style": "Pinch",
+        "Move": "Tension",
+        "Attempts": 3,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 20,
+        "Grade": "V4",
+        "Terrain": "Roof",
+        "Hold Style": "Pinch",
+        "Move": "Tension",
+        "Attempts": 3,
+        "Gym": "Ascend South Side"
+      },
+      {
+        "Num": 21,
+        "Grade": "V4",
+        "Terrain": "Roof",
+        "Hold Style": "Pinch",
+        "Move": "Tension",
+        "Attempts": 3,
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 22,
+        "Grade": "V3",
+        "Terrain": "Roof",
+        "Hold Style": "Pinch",
+        "Move": "Dyno",
+        "Attempts": 3,
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 23,
+        "Grade": "V3",
+        "Terrain": "Face",
+        "Hold Style": "Pinch",
+        "Move": "Dyno",
+        "Attempts": 3,
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 24,
+        "Grade": "V3",
+        "Terrain": "Face",
+        "Hold Style": "Pinch",
+        "Move": "Dyno",
+        "Attempts": 3,
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 25,
+        "Grade": "V3",
+        "Terrain": "Mixed",
+        "Hold Style": "Pinch",
+        "Move": "Coordiation",
+        "Attempts": 3,
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 26,
+        "Grade": "V3",
+        "Terrain": "Face",
+        "Hold Style": "Undercling",
+        "Move": "Coordiation",
+        "Attempts": 3,
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 27,
+        "Grade": "V3",
+        "Terrain": "Face",
+        "Hold Style": "Undercling",
+        "Move": "Coordiation",
+        "Attempts": 3,
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 28,
+        "Grade": "V3",
+        "Terrain": "Face",
+        "Hold Style": "Undercling",
+        "Move": "Coordiation",
+        "Attempts": "3",
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 29,
+        "Grade": "V3",
+        "Terrain": "Face",
+        "Hold Style": "Undercling",
+        "Move": "Coordiation",
+        "Attempts": "3",
+        "Gym": "Ascend Point Breeze"
+      },
+      {
+        "Num": 30,
+        "Grade": "V3",
+        "Terrain": "Arate",
+        "Hold Style": "Undercling",
+        "Move": "Coordiation",
+        "Attempts": "3",
+        "Gym": "Ascend Point Breeze"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": { "field": "Terrain", "type": "nominal" },
+    "y": { "aggregate": "average", "field": "Attempts", "type": "quantitative" }
+  }
+}
